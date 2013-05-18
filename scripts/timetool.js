@@ -139,18 +139,6 @@ var TimeToolApp = Backbone.Router.extend({
         this.switchView(new JobView({
             model: this.timetool.get(id)
         }));
-    },
-
-    templateLoader: function(url) {
-        var data = "<h1> failed to load url : " + url + "</h1>";
-        $.ajax({
-            async: false,
-            url: url,
-            success: function(response) {
-                data = response;
-            }
-        });
-        return data;
     }
 });
 
