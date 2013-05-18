@@ -1,12 +1,12 @@
-var Loader;
+var TextLoader;
 
-Loader = (function() {
+TextLoader = (function() {
 
-  function Loader() {}
+  function TextLoader() {}
 
-  Loader.files = {};
+  TextLoader.files = {};
 
-  Loader.load = function(path) {
+  TextLoader.load = function(path) {
     var _base;
     return (_base = this.files)[path] || (_base[path] = $.ajax({
       url: path,
@@ -14,6 +14,6 @@ Loader = (function() {
     }).responseText);
   };
 
-  return Loader;
+  return TextLoader;
 
 })();

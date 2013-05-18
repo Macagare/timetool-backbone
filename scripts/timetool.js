@@ -24,7 +24,7 @@ var NavigationView = Backbone.View.extend({
 
 
 var JobView = Backbone.View.extend({
-    template: _.template( Loader.load("templates/job.tpl") ),
+    template: _.template( TextLoader.load("templates/job.tpl") ),
     render: function() {
         this.$el.html( this.template( this.model.toJSON() ) );
         return this;
@@ -36,7 +36,7 @@ var ListView = Backbone.View.extend({
     events: {
         'click a': 'navigate'
     },
-    template: _.template( Loader.load("templates/list-empty.tpl") ),
+    template: _.template( TextLoader.load("templates/list-empty.tpl") ),
     render: function () {
         if (this.model.length) {
             this.model.each(function (job) {
@@ -55,7 +55,7 @@ var ListView = Backbone.View.extend({
 
 var ListViewItem = Backbone.View.extend({
     tagName: 'li',
-    template: _.template( Loader.load("templates/list-item.tpl") ),
+    template: _.template( TextLoader.load("templates/list-item.tpl") ),
     render: function() {
         this.$el.html(this.template(this.model.toJSON()));
         return this;
@@ -64,7 +64,7 @@ var ListViewItem = Backbone.View.extend({
 
 var EditView = Backbone.View.extend({
     // Cache the template function for a single item.
-    template: _.template( Loader.load("templates/edit.tpl") ),
+    template: _.template( TextLoader.load("templates/edit.tpl") ),
     
     events: {
         'click input[type="submit"]': 'save'
