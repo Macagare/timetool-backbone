@@ -1,6 +1,6 @@
 var Job = Backbone.Model.extend({
     defaults: {
-        title: "Neue Aufgabe",
+        title: "",
         date: "",
         duration: "",
         description: ""

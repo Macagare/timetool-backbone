@@ -1,15 +1,15 @@
 <form class="form-horizontal">
   <fieldset>
-    <legend>Form Name</legend>
+    <legend>Insert Task</legend>
     <div class="control-group">
-      <label class="control-label" for="title">Aufgabe</label>
+      <label class="control-label" for="title">Task</label>
       <div class="controls">
         <input id="title" name="title" type="text"  class="input-medium" value="<%- title %>">
       </div>
     </div>
 
     <div class="control-group">
-      <label class="control-label" for="date">Datum</label>
+      <label class="control-label" for="date">Date</label>
       <div class="controls">
         <input id="date" name="date" type="text" class="input-mini" value="<%- date %>">
         
@@ -17,7 +17,7 @@
     </div>
 
     <div class="control-group">
-      <label class="control-label" for="duration">Dauer</label>
+      <label class="control-label" for="duration">Duration</label>
       <div class="controls">
         <input id="duration" name="duration" type="text" class="input-mini" value="<%- duration %>">
         
@@ -25,7 +25,7 @@
     </div>
 
     <div class="control-group">
-      <label class="control-label" for="description">Beschreibung</label>
+      <label class="control-label" for="description">Description</label>
       <div class="controls">                     
         <textarea id="description" name="description"><%- description %></textarea>
       </div>

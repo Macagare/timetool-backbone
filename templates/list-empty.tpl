@@ -1,1 +1,1 @@
-Noch keine Aufgaben eingetragen.
+No tasks found.
