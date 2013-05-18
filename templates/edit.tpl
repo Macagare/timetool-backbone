@@ -11,7 +11,7 @@
     <div class="control-group">
       <label class="control-label" for="date">Date</label>
       <div class="controls">
-        <input id="date" name="date" type="text" class="input-mini" value="<%- date %>">
+        <input id="date" name="date" type="text" class="input-medium" value="<%- date %>">
         
       </div>
     </div>

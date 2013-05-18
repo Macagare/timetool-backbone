@@ -8,3 +8,5 @@
 
 <h3>Beschreibung:</h3>
 <p><%- description %></p>
+
+<p><a href="/">back</a></p>
